@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  /* border: 1px solid #000000; */
+  min-height: 100px;
+}
+
+.col-12 {
+  width: calc(100% / 12 * 12);
+}
+
+.col-6 {
+  width: calc(100% / 12 * 6);
+}
+
+.col-4 {
+  width: calc(100% / 12 * 4);
+}
+
+.col-3 {
+  width: calc(100% / 12 * 3);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .col-sm-12 {
+    width: calc(100% / 12 * 12);
+  }
+
+  .col-sm-6 {
+    width: calc(100% / 12 * 6);
+  }
+
+  .col-sm-4 {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col-sm-3 {
+    width: calc(100% / 12 * 3);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .col-md-12 {
+    width: calc(100% / 12 * 12);
+  }
+
+  .col-md-6 {
+    width: calc(100% / 12 * 6);
+  }
+
+  .col-md-4 {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col-md-3 {
+    width: calc(100% / 12 * 3);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .col-lg-12 {
+    width: calc(100% / 12 * 12);
+  }
+
+  .col-lg-6 {
+    width: calc(100% / 12 * 6);
+  }
+
+  .col-lg-4 {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col-lg-3 {
+    width: calc(100% / 12 * 3);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .col-xl-12 {
+    width: calc(100% / 12 * 12);
+  }
+  .col-xl-6 {
+    width: calc(100% / 12 * 6);
+  }
+
+  .col-xl-4 {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col-xl-3 {
+    width: calc(100% / 12 * 3);
+  }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.hgLogo {
+  width: 100%;
+  padding: 20px;
+}
+
+#enterSite {
+  display: grid;
+  place-items: center;
+}
+
+#manageBtn {
+  text-decoration: none !important;
+}
+
+.mainPage {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(/assets/images/background.jpeg);
+  background-size: cover;
+}
+
+body > table {
+  width: 80%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table.list {
+  width: 100%;
+}
+
+td,
+th {
+  border: 2px solid #black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even),
+table.list thead > tr {
+  background-color: gray;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 30%;
+  background-color: #ddd;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form div.form-action-buttons {
+  text-align: right;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0000ee;
+  margin-right: 4px;
+}
+
+label.validation-error {
+  color: red;
+  margin-left: 5px;
+}
+
+.hide {
+  display: none;
+}

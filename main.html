@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC|Righteous|Tenali+Ramakrishna" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+    <title>Higher Ground Teams</title>
+</head>
+
+<body>
+    <div class="container-fluid mainPage py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>TEAM ROSTER</h1>
+            </div>
+        </div>
+
+        <form onsubmit="event.preventDefault();onFormSubmit(); " autocomplete="off">
+            <div class="container py-4 ">
+                <div class="row">
+                    <div class="col-3">
+                        <label for="">Position</label>
+                        <select id="position" name="position">
+                            <option value="PG">Point Guard</option>
+                            <option value="SG">Shooting Guard</option>
+                            <option value="SF">Small Forward</option>
+                            <option value="PF">Power Forward</option>
+                            <option value="C">Center</option>
+                        </select>
+                    </div>
+
+                    <div class="col-3">
+                        <label for="">Years Pro</label>
+                        <select id="yearsPro" name="yearsPro">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-6 text-center ">
+                        <a id="manageBtn" type="button" class="btn btn-danger btn-lg" href="index.html">Back to Home</a>
+                        <!-- <a type="button" class="btn btn-danger btn-lg" href="index.html">Save</a> -->
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label for="">Last Name</label>
+                        <label class="validation-error hide" id="lastNameValidationError">This field is
+                            required.</label>
+                        <input type="text" name="lastName" id="lastName" />
+
+                        <label for="">First Name</label>
+                        <input type="text" name="firstName" id="firstName" />
+
+                        <label for="">Monthly Salary</label>
+                        <input type="text" name="monthlySalary" id="monthlySalary" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <label for="">Billed Height</label>
+                        <input type="text" name="billedHeight" id="billedHeight" />
+                    </div>
+
+                    <div class="col-2">
+                        <label for="">Billed Weight</label>
+                        <input type="text" name="billedWeight" id="billedWeight" />
+                    </div>
+
+                    <div class="col-2">
+                        <label for="">Jersey No</label>
+                        <input type="text" name="jerseyNo" id="jerseyNo" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 form-action-buttons">
+                        <input type="submit" value="Submit" />
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="container py-4">
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover list" id="playersList">
+                        <thead>
+                            <tr>
+                                <th>Position</th>
+                                <th>Years Pro</th>
+                                <th>Last Name</th>
+                                <th>First Name</th>
+                                <th>Monthly Salary</th>
+                                <th>Billed Height</th>
+                                <th>Billed Weight</th>
+                                <th>Jersey No</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
